@@ -4,11 +4,8 @@ import { Items } from "../Data";
 import { FaRegHeart } from "react-icons/fa6";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import all from "../../assets/all.png";
 import heartt from "../../assets/heartt.png";
-import { Gadget } from "../../Gadget";
 import { BsCartDash } from "react-icons/bs";
-import { FewGadgets } from "./fewGadget";
 
 const GadgetPage = () => {
   const responsive = {
