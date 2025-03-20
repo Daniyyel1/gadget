@@ -23,7 +23,7 @@ function App() {
              <Route path='/contact' element={<Contact />} />
              <Route path='/cartpage' element={<CartPage />} />
              <Route path='gadgetPage/:id' element={<GadgetPage />} />
-             
+              <Route path='/admin' element={<Admin />} />
             </Route>
       </Routes>
     </>

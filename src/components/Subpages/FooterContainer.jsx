@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 const FooterContainer = () => {
   return (
-    <div className="max-w-[1100px] m-auto h-[100%] mt-7">
+    <div className="max-w-[1100px] m-auto h-[100%]  max-md:mt-5 ">
       <div className=" flex gap-[6rem] max-md:px-4 max-md:gap-[2rem] py-[40px] max-md:py-[20px] max-md:flex-col text-[#fff]">
         <div>
           <h1 className="text-[25px] font-[600] uppercase text-[#ded7c4]">

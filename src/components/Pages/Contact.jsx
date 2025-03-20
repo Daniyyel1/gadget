@@ -5,8 +5,8 @@ import ProductManagement from '../Subpages/ProductManagement'
 const Contact = () => {
   return (
     <div>
-       {/* <Admin /> */}
-       <ProductManagement />
+       <Admin />
+       
     </div>
   )
 }

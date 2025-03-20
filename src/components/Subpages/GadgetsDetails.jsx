@@ -11,7 +11,7 @@ const GadgetsDetails = ({ item }) => {
   }; 
 
   return (
-    <div className="relative group">
+    <div className="">
       <div className="change h-[310px] bg-[linear-gradient(180deg,#372f28_50%,#fff_50%)] rounded-[7px]">
         <div className="img flex justify-center items-center py-[10px] max-md:py-[5px]">
           <img
@@ -21,8 +21,8 @@ const GadgetsDetails = ({ item }) => {
           />
         </div>
 
-        <div className="px-[13px]">
-          <h1 className="text-[13px] max-md:text-[13px] max-md:w-[160px] font-[550]">{truncateText(item.name, 28)}</h1>
+        <div className="px-[13px] max-md:px-[10px]">
+          <h1 className="text-[13px] max-md:text-[13px] max-md:w-[155px] font-[550]">{truncateText(item.name, 28)}</h1>
           <div className="flex justify-between items-center max-md:flex-col max-md:items-start">
             <h2 className="font-[550] max-md:text-[15px]">₦ {item.price}</h2>
             <Link

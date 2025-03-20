@@ -64,12 +64,14 @@ const Navbar = () => {
                 search
               </h1>
             </div>
+            <Link to='/profile'>
             <div className="relative group">
               <GoPerson className="size-6 max-md:text-[#eae5dd]" />
               <h1 className="hidden rounded-[2px] text-[13px] text-[#fff] bg-[#372f28] text-center border-[2px] border-[#372f28] w-[70px] h-[40px] absolute group-hover:block top-[30px] left-[-24px] py-[5px] capitalize">
                 profile
               </h1>
             </div>
+            </Link>
             <Link
               to="/cartpage"
               className="flex flex-row items-center relative group"

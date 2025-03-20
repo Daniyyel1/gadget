@@ -35,7 +35,7 @@ const Brands = () => {
     <div className='grid grid-cols-4 max-md:grid-cols-2 gap-5 max-md:gap-2 mt-[20px]  '>
         {items.map((item)=>{
           return (
-             <div className='box h-[260px]  bg-[linear-gradient(180deg,#372f28_50%,#fff_50%)] px-4 max-md:px-2'>
+             <div  className='box h-[260px]  bg-[linear-gradient(180deg,#372f28_50%,#fff_50%)] px-4 max-md:px-2'>
                <div className='flex justify-center items-center object-cover py-2'>
               <img className='h-[160px] max-md:h-[145px] w-[100%]' src={item.images[0]} alt='images' />
               </div>

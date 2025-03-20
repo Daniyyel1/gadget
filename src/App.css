@@ -35,22 +35,30 @@
 
 .box{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: .2s ease-in;
+}
+
+.box:hover{
+  transform:  scale(1.2);
+  transition: .2s ease-in;
 }
 
 .change:hover{
-  position: absolute;
-  top: -10px;
-  transition: .3s all;
-  cursor: pointer;
+  transform: scale(1.2);
+  transition: .2s ease-in;
 }
 
 
 
 .card{
-  max-width: 320px;
+  /* max-width: 320px; */
   margin: auto 0.7rem;
 }
 
+.card:hover{
+  transform: scale(1.2);
+  transition: .3s ease-in;
+}
 
 .button{
   width: 150px;
@@ -146,7 +154,49 @@
     display: block;
     align-items: start;
   }
+
+  th {
+    display: none; /* Hide headers */
+    text-transform: capitalize;
+  }
+
+  .table,.table tbody,.table tr,.table td{
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+  }
+
+
+  .table tr{
+    margin-bottom: 15px;
+  }
   
+   .table tbody tr td{
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+   }
+
+   td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+   }
+   .last td{
+     display: block;
+     justify-content: end;
+     align-items: end;
+     gap: 20px;
+   }
+}
+
+.last td{
+  gap: 20px;
+}
+
+
+.last td{
+  display: flex;
 }
 
 .list:nth-child(1){
@@ -174,6 +224,7 @@ th{
   background-color: #3C3D37;
   font-size: 15px;
   font-weight: 500;
+  width: 100%;
 }
 
 td{
@@ -193,11 +244,6 @@ tr th{
   color: #fff;
 }
 
-.last{
-  position: relative;
-  top: 0px;
-}
-
 .move:hover{
   background-color: #36454F;
 }
@@ -211,3 +257,15 @@ input::placeholder{
   font-size: 13px;
 }
 
+.carousel-image {
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-image.active {
+   transform: scale(1.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid #ff4500;
+} 
+ 

@@ -12,11 +12,11 @@ const ProductManagement = () => {
   };
 
   return (
-    <div className="h-[156vh] max-md:h-[100%] bg-[rgb(0,0,0)]">
+    <div className="h-[100%] max-md:h-[100%] bg-[rgb(0,0,0)]">
       <div className=" py-3 relative">
-        <div className="max-w-[1000px]  m-auto h-[100%] mt-8 border-1 border-[gray] px-3 py-1.5">
+        <div className="max-w-[1000px] mt-8  m-auto h-[100%]  border-1 border-[gray] px-3 py-1.5">
           <div className="text-[#fff] flex justify-between items-center py-3">
-            <h1 className="text-[20px] font-[550] capitalize">
+            <h1 className="text-[20px] max-md:text-[15px] font-[550] capitalize">
               product management
             </h1>
              {
@@ -25,6 +25,8 @@ const ProductManagement = () => {
                 
              }
           </div>
+           <div className="table">
+          <thead>
           <tr className="move">
             <th>name</th>
             <th>description</th>
@@ -34,92 +36,88 @@ const ProductManagement = () => {
             <th>inventory</th>
             <th>actions</th>
           </tr>
+          </thead>
+           <tbody>
           <tr className="move">
-            <td>jjjff</td>
-            <td>jjjjk</td>
-            <td>jrjrkrkkk</td>
-            <td>jrrbbcbbcbnj</td>
-            <td>jrkbcbcbcr</td>
-            <td>jrrk</td>
-            <div className="last">
-              <td>
-                <FiEdit />
+            <td data-label='name'>jjjff</td>
+            <td data-label='description'>jjjjk</td>
+            <td data-label='price'>jrjrkrkkk</td>
+            <td data-label='discount'>jrrbbcbbcbnj</td>
+            <td data-label='category'>jrkbcbcbcr</td>
+            <td data-label='inventory'>jrrk</td>
+             <div className="last">
+            <td className="action" data-label= 'actions'>
+              <FiEdit className="text-[17px]" />
+              <RiDeleteBinLine className="text-[red] text-[20px]" />
               </td>
-              <td>
-                <RiDeleteBinLine className="text-[22px] text-[red] cursor-pointer" />
-              </td>
-            </div>
+              </div>
           </tr>
           <tr className="move">
-            <td>jjjff</td>
-            <td>jjjjk</td>
-            <td>jrjrkrkkk</td>
-            <td>jrbcccncnncrj</td>
-            <td>jrkbcccnccr</td>
-            <td>jrrk</td>
-            <div className="last">
-              <td>
-                <FiEdit />
+            <td data-label='name'>jjjff</td>
+            <td data-label='description'>jjjjk</td>
+            <td data-label='price'>jrjrkrkkk</td>
+            <td data-label='discount'>jrrbbcbbcbnj</td>
+            <td data-label='category'>jrkbcbcbcr</td>
+            <td data-label='inventory'>jrrk</td>
+             <div className="last">
+            <td className="action" data-label= 'actions'>
+              <FiEdit className="text-[17px]" />
+              <RiDeleteBinLine className="text-[red] text-[20px]" />
               </td>
-              <td>
-                <RiDeleteBinLine className="text-[22px] text-[red] cursor-pointer" />
-              </td>
-            </div>
+              </div>
           </tr>
           <tr className="move">
-            <td>jjjff</td>
-            <td>jjjjk</td>
-            <td>jrjrkrkkk</td>
-            <td>jrrbccnncj</td>
-            <td>nccnncbccnc</td>
-            <td>jrrk</td>
-            <div className="last">
-              <td>
-                <FiEdit />
+            <td data-label='name'>jjjff</td>
+            <td data-label='description'>jjjjk</td>
+            <td data-label='price'>jrjrkrkkk</td>
+            <td data-label='discount'>jrrbbcbbcbnj</td>
+            <td data-label='category'>jrkbcbcbcr</td>
+            <td data-label='inventory'>jrrk</td>
+             <div className="last">
+            <td className="action" data-label= 'actions'>
+              <FiEdit className="text-[17px]" />
+              <RiDeleteBinLine className="text-[red] text-[20px]" />
               </td>
-              <td>
-                <RiDeleteBinLine className="text-[22px] text-[red] cursor-pointer" />
-              </td>
-            </div>
+              </div>
           </tr>
           <tr className="move">
-            <td>jjjff</td>
-            <td>jjjjk</td>
-            <td>jrjrkrkkk</td>
-            <td>jrbcccnrj</td>
-            <td>jrcncncnkr</td>
-            <td>jrrk</td>
-            <div className="last">
-              <td>
-                <FiEdit className="" />
+            <td data-label='name'>jjjff</td>
+            <td data-label='description'>jjjjk</td>
+            <td data-label='price'>jrjrkrkkk</td>
+            <td data-label='discount'>jrrbbcbbcbnj</td>
+            <td data-label='category'>jrkbcbcbcr</td>
+            <td data-label='inventory'>jrrk</td>
+             <div className="last">
+            <td className="action" data-label= 'actions'>
+              <FiEdit className="text-[17px]" />
+              <RiDeleteBinLine className="text-[red] text-[20px]" />
               </td>
-              <td>
-                <RiDeleteBinLine className="text-[22px] text-[red] cursor-pointer" />
-              </td>
-            </div>
+              </div>
           </tr>
           <tr className="move">
-            <td className="">jjjfcbcbcbcbcbcbcbcf</td>
-            <td className="">jjjcbcbcbcbbcjk</td>
-            <td className="">jrjrkrkkk</td>
-            <td className="">jrrbcbcbcj</td>
-            <td className="">jrkhcccnr</td>
-            <td className="">jrrk</td>
-            <div className="">
-              <td className="">
-                <FiEdit className="text-[18px] cursor-pointer" />
+            <td data-label='name'>jjjff</td>
+            <td data-label='description'>jjjjk</td>
+            <td data-label='price'>jrjrkrkkk</td>
+            <td data-label='discount'>jrrbbcbbcbnj</td>
+            <td data-label='category'>jrkbcbcbcr</td>
+            <td data-label='inventory'>jrrk</td>
+             <div className="last">
+            <td className="action" data-label= 'actions'>
+              <FiEdit className="text-[17px]" />
+              <RiDeleteBinLine className="text-[red] text-[20px]" />
               </td>
-              <td>
-                <RiDeleteBinLine className="text-[22px] text-[red] cursor-pointer" />
-              </td>
-            </div>
+              </div>
           </tr>
+        
+         
+          </tbody>
+          </div>
         </div>
-
+         
         <div>
           <div
-            className={` h-[144vh] w-[450px] left-[-100%]  transition-all duration-300 absolute  bg-[#152238] top-0 m-auto mt-10 rounded-[10px] ${
-              close ? "left-[33%] transition-all duration-300" : ""
+            className={` h-[144vh] w-[450px] left-[-100%] max-md:ml-1.5  transition-all duration-300 absolute max-md:w-[350px] bg-[#152238] top-0 m-auto mt-10 rounded-[10px] ${
+              close ? "left-[33%] max-md:left-[0] transition-all duration-300" : ""
             }`}
           >
             <div className="flex justify-between items-center py-2.5 px-3 text-[#fff]">
@@ -143,20 +141,20 @@ const ProductManagement = () => {
                 <label className="text-[12px]">Description</label>
                 <br></br>
                 <textarea
-                  className="bg-[#000] resize-none outline-0 px-2 mt-[5px] rounded-[5px]"
+                  className="bg-[#000] max-md:w-[100%] resize-none outline-0 px-2 mt-[5px] rounded-[5px]"
                   rows={4}
                   cols={51}
                 />
                 <br></br>
                 <br></br>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 max-md:gap-2 ">
                   <div>
                     <label className="text-[12px]" for="options">
                       Manufacturer Name
                     </label>
                     <br></br>
                     <select
-                      className="bg-[#000] outline-0 h-[40px] text-[13px] border-1 border-[green] rounded-[4px]  w-[200px] mt-[5px]"
+                      className="bg-[#000] outline-0 h-[40px] text-[13px] border-1 border-[green] rounded-[4px]  w-[200px] max-md:w-[170px] mt-[5px]"
                       id="options"
                       name="options"
                     >
@@ -173,7 +171,7 @@ const ProductManagement = () => {
                     </label>
                     <br></br>
                     <input
-                      className="outline-0 border-1 border-[green] h-[40px] mt-[5px]  rounded-[4px] bg-[#000] px-1.5"
+                      className="outline-0 border-1 border-[green] h-[40px] mt-[5px] max-md:w-[150px] rounded-[4px] bg-[#000] px-1.5 max-md:px-0.5"
                       type="text"
                     />
                   </div>
@@ -182,14 +180,14 @@ const ProductManagement = () => {
                 <label className="text-[12px]" for="specification">
                   Specification
                 </label>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 max-md:gap-2">
                   <input
-                    className="border-1 border-[green] bg-[#000] h-[40px] outline-0 rounded-[4px] w-[200px] mt-[5px] px-1.5"
+                    className="border-1 border-[green] bg-[#000] h-[40px] outline-0 rounded-[4px] w-[200px] max-md:w-[170px] mt-[5px] px-1.5"
                     type="text"
                     placeholder="Key"
                   />
                   <input
-                    className="border-1 border-[green] h-[40px] bg-[#000] outline-0 rounded-[4px] mt-[5px] px-1.5 "
+                    className="border-1 border-[green] h-[40px] bg-[#000] outline-0 rounded-[4px] max-md:w-[150px] mt-[5px] px-1.5 "
                     type="text"
                     placeholder="Value"
                   />
@@ -240,12 +238,12 @@ const ProductManagement = () => {
                   </div>
                 </div>
                 <br></br>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 max-md:gap-2">
                   <div>
                     <label className="text-[12px]">Inventory</label>
                     <br />
                     <input
-                      className="border-1 border-[green] w-[200px] h-[40px] px-1.5"
+                      className="border-1 border-[green] w-[200px] max-md:w-[170px] h-[40px] px-1.5"
                       type="number"
                       placeholder="0"
                     />
@@ -254,7 +252,7 @@ const ProductManagement = () => {
                     <label className="text-[12px]">Inventory</label>
                     <br />
                     <input
-                      className="border-1 border-[green] h-[40px] px-1.5"
+                      className="border-1 border-[green] h-[40px] max-md:w-[150px] px-1.5"
                       type="number"
                       placeholder="0"
                     />

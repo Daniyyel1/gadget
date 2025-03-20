@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Main = () => {
   return (
-    <div className=''>
+    <div className='h-[100%]'>
         <Navbar />
 
         <Outlet />

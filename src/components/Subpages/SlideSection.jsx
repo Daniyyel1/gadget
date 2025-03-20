@@ -21,26 +21,50 @@ const SlideSection = () => {
   };
   
  
-
+  const slideSection = [
+     {
+       id:1,
+       img:'https://i.pinimg.com/736x/8c/db/e1/8cdbe123010c380e20f264a8fdd57938.jpg',
+     },
+     {
+       id:2,
+       img:'https://i.pinimg.com/736x/8c/db/e1/8cdbe123010c380e20f264a8fdd57938.jpg',
+     },
+     {
+       id:3,
+       img:'https://i.pinimg.com/736x/62/d4/52/62d45263e9db6af2785399aec22b9564.jpg',
+     },
+     {
+       id:4,
+       img:'https://i.pinimg.com/736x/cd/cd/ab/cdcdabfb9b5259236eb5b6a7d4f17666.jpg',
+     },
+     {
+       id:5,
+       img:'https://i.pinimg.com/736x/2d/bb/f1/2dbbf1bd57481461bba8945c91a3c561.jpg',
+     },
+  ]
  
 
   return (
-    <div className="max-md:mt-7">
-      <Carousel className="" responsive={responsive}
+      <Carousel className="max-w-[1200px] m-auto" responsive={responsive}
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={5000}
         transitionDuration={500}
       
       >
-         <div className="max-md:w-[320px] max-md:m-auto">
-        <div className="card h-[240px] max-[960px]:h-[240px] border-2 flex justify-center items-center">
-            <img className="object-cover max-md:h-[150px] max-md:w-[200px]" src={only} alt="img " />
-        </div>
-        </div>
+          {
+            slideSection.map((item, index) =>{
+              return <div className="h-[300px] w-[400px] flex justify-center items-center  max-md:mt-3.5" key={index}>
+          
+                 <img className="h-[100%] w-[100%] object-center" src={item.img} alt="slide" />
+                
+              </div>
+            })
+          }
+
       </Carousel>
-         
-    </div>
+        
   );
 };
 
